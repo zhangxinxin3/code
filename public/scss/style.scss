@@ -1,0 +1,204 @@
+@import '_minix.scss';
+@import 'common.scss';
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(60px);
+    background: #333333;
+    color: #fff;
+    @include box_flex;
+    padding: pxTorem(15px);
+    @include sizing;
+    >dl {
+        width: 100%;
+        height: 100%;
+        @include box_flex;
+        @include align;
+        dt {
+            width: pxTorem(30px);
+            height: pxTorem(40px);
+            margin-right: pxTorem(15px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd {
+            font-size: pxTorem(20px);
+        }
+    }
+}
+
+section {
+    @include flex;
+    overflow-y: auto;
+    .top {
+        width: 100%;
+        height: pxTorem(100px);
+        padding: pxTorem(15px);
+        @include sizing;
+        @include box_flex;
+        >dt {
+            width: pxTorem(60px);
+            height: pxTorem(60px);
+            margin-right: pxTorem(10px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        >dd {
+            @include flex;
+            @include box_flex;
+            .left {
+                @include box_flex;
+                @include direction(column);
+                h3 {
+                    font-size: pxTorem(20px);
+                    b {
+                        color: #F2922F;
+                        margin-bottom: pxTorem(10px);
+                    }
+                }
+                p {
+                    font-size: pxTorem(15px);
+                    i {
+                        color: #5ADAD0;
+                        border: solid 1px #5ADAD0;
+                        margin-right: pxTorem(5px);
+                    }
+                }
+            }
+            .love {
+                @include flex;
+                @include box_flex;
+                @include direction(column);
+                @include justify;
+                @include align;
+                >dt {
+                    width: pxTorem(30px);
+                    height: pxTorem(30px);
+                    margin-bottom: pxTorem(8px);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                >dd {
+                    font-size: pxTorem(13px);
+                }
+            }
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        height: pxTorem(150px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .lis {
+        width: 100%;
+        @include flex;
+        padding: 0 pxTorem(15px);
+        @include sizing;
+        .list {
+            width: 100%;
+            height: pxTorem(50px);
+            @include box_flex;
+            @include justify;
+            @include align;
+            li {
+                @include flex;
+                height: 100%;
+                @include box_flex;
+                font-size: pxTorem(16px);
+                @include justify;
+                @include align;
+            }
+        }
+    }
+    .dls {
+        width: 100%;
+        @include box_flex;
+        @include flexWrap;
+        dl {
+            width: 50%;
+            height: pxTorem(250px);
+            border-right: solid 1px #ccc;
+            padding: pxTorem(10px);
+            @include sizing;
+            dt {
+                width: pxTorem(150px);
+                height: pxTorem(130px);
+                margin-bottom: pxTorem(5px);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dd {
+                h5 {
+                    font-size: pxTorem(15px);
+                }
+                >p {
+                    font-size: pxTorem(13px);
+                    margin: pxTorem(5px);
+                    color: #999;
+                }
+                >div {
+                    width: 100%;
+                    @include box_flex;
+                    @include justify(space-between);
+                    >p {
+                        font-size: pxTorem(16px);
+                    }
+                    i {
+                        width: pxTorem(20px);
+                        height: pxTorem(20px);
+                        line-height: pxTorem(20px);
+                        text-align: center;
+                        color: #fff;
+                        background: aqua;
+                        font-size: pxTorem(15px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(65px);
+    border-top: solid 1px #999;
+    @include box_flex;
+    dl {
+        @include flex;
+        @include box_flex;
+        @include direction(column);
+        @include justify;
+        @include align;
+        padding-top: pxTorem(5px);
+        @include sizing;
+        dt {
+            width: pxTorem(30px);
+            height: pxTorem(30px);
+            margin-bottom: pxTorem(5px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd {
+            font-size: pxTorem(14px);
+        }
+    }
+}
